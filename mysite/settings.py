@@ -80,7 +80,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 MONGO_URI = os.getenv('MONGO_URI')
 DATABASES = {
     'default': {
-    
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mysite',
     }
 }
 
